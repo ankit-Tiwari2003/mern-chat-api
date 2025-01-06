@@ -142,7 +142,7 @@ app.post('/register', async (req, res) => {
   }
 });
 
-const server = app.listen(4040);
+const server = app.listen(10000);
 
 // WebSocket Server
 const wss = new ws.WebSocketServer({ server });
