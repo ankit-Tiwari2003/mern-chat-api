@@ -111,7 +111,7 @@ app.post('/login', async (req, res) => {
       res.status(401).json('User not found');
     }
   } catch (err) {
-    res.status(500).json('Error during login');
+    res.status(500).json('Error during login', err);
   }
 });
 
