@@ -31,8 +31,7 @@ app.use(express.json({ limit: '10mb' }));  // Increased limit for base64 files
 app.use(cookieParser());
 app.use(cors({
   credentials: true,
-  origin:'*'
-  // origin: process.env.CLIENT_URL,
+  origin: process.env.CLIENT_URL,
 }));
 
 // Helper function to get user data from JWT token
